@@ -135,6 +135,8 @@ fn_ignore_files:
 # Order that modules should appear in report. Try to list in order of analysis,
 # eg. FastQC is usually the first step, so should be last in this list.
 module_order:
+    # MultiQC general module for catching output from custom scripts
+    - 'custom_content'
     # Post-alignment analysis results
     - 'quast'
     - 'snpeff'
